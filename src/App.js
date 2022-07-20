@@ -18,8 +18,8 @@ export default function App() {
       .catch((error) => {
         console.log("Error while fetching the posts -> ", error.message);
       });
-  }, [userId]); // -> without providing any dependices in the array, this will works as componentDidMount
-  // -> with the provided dependenies with in the array useEffect works as componetnDidUpdate
+  }, [userId]); // -> without providing any dependencies in the array, this will works as componentDidMount
+  // -> with the provided dependencies with in the array useEffect works as componentDidUpdate
 
   // Example for ComponentWillUnmount
   useEffect(() => {
